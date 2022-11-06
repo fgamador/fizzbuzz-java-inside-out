@@ -9,4 +9,8 @@ public class FizzbuzzTest {
     void ordinaryNumberPrintsAsItself() {
         assertEquals("2", fizzbuzz(2));
     }
+
+    private String fizzbuzz(int num) {
+        return null;
+    }
 }
