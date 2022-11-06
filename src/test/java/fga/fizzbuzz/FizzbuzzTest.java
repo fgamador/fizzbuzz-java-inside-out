@@ -11,6 +11,6 @@ public class FizzbuzzTest {
     }
 
     private String fizzbuzz(int num) {
-        return "2";
+        return String.valueOf(num);
     }
 }
