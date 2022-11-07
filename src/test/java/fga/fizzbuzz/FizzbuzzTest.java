@@ -20,6 +20,11 @@ public class FizzbuzzTest {
         assertEquals("Buzz", fizzbuzz(10));
     }
 
+    @Test
+    void multipleOfFifteenPrintsAsFizzBuzz() {
+        assertEquals("FizzBuzz", fizzbuzz(30));
+    }
+
     private String fizzbuzz(int num) {
         if (num % 3 == 0)
             return "Fizz";
