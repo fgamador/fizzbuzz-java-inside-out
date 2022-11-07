@@ -25,7 +25,7 @@ public class FizzbuzzTest {
         assertEquals("FizzBuzz", fizzbuzz(30));
     }
 
-    private String fizzbuzz(int num) {
+    private static String fizzbuzz(int num) {
         if (num % 15 == 0)
             return "FizzBuzz";
 
