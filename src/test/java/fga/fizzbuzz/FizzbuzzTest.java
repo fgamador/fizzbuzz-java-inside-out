@@ -21,11 +21,11 @@ public class FizzbuzzTest {
     }
 
     private String fizzbuzz(int num) {
-        if (num == 10)
-            return "Buzz";
-
         if (num % 3 == 0)
             return "Fizz";
+
+        if (num % 5 == 0)
+            return "Buzz";
 
         return String.valueOf(num);
     }
