@@ -7,34 +7,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FizzbuzzTest {
     @Test
     void ordinaryNumberPrintsAsItself() {
-        assertEquals("2", fizzbuzz(2));
+        assertEquals("2", FizzBuzz.fizzbuzz(2));
     }
 
     @Test
     void multipleOfThreePrintsAsFizz() {
-        assertEquals("Fizz", fizzbuzz(6));
+        assertEquals("Fizz", FizzBuzz.fizzbuzz(6));
     }
 
     @Test
     void multipleOfFivePrintsAsBuzz() {
-        assertEquals("Buzz", fizzbuzz(10));
+        assertEquals("Buzz", FizzBuzz.fizzbuzz(10));
     }
 
     @Test
     void multipleOfFifteenPrintsAsFizzBuzz() {
-        assertEquals("FizzBuzz", fizzbuzz(30));
-    }
-
-    private static String fizzbuzz(int num) {
-        if (num % 15 == 0)
-            return "FizzBuzz";
-
-        if (num % 3 == 0)
-            return "Fizz";
-
-        if (num % 5 == 0)
-            return "Buzz";
-
-        return String.valueOf(num);
+        assertEquals("FizzBuzz", FizzBuzz.fizzbuzz(30));
     }
 }
