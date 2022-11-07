@@ -26,7 +26,7 @@ public class FizzbuzzTest {
     }
 
     private String fizzbuzz(int num) {
-        if (num == 30)
+        if (num % 15 == 0)
             return "FizzBuzz";
 
         if (num % 3 == 0)
