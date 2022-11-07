@@ -10,6 +10,11 @@ public class FizzbuzzTest {
         assertEquals("2", fizzbuzz(2));
     }
 
+    @Test
+    void multipleOfThreePrintsAsFizz() {
+        assertEquals("Fizz", fizzbuzz(6));
+    }
+
     private String fizzbuzz(int num) {
         return String.valueOf(num);
     }
