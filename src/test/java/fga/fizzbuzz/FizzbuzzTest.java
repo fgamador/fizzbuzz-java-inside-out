@@ -15,6 +15,11 @@ public class FizzbuzzTest {
         assertEquals("Fizz", fizzbuzz(6));
     }
 
+    @Test
+    void multipleOfFivePrintsAsBuzz() {
+        assertEquals("Buzz", fizzbuzz(10));
+    }
+
     private String fizzbuzz(int num) {
         if (num % 3 == 0)
             return "Fizz";
